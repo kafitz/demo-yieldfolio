@@ -1,5 +1,5 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import portfolioReducer from '../views/portfolio/portfolioSlice';
+import portfolioReducer from '../components/positionsTable/positionsSlice';
 
 export const store = configureStore({
   reducer: {

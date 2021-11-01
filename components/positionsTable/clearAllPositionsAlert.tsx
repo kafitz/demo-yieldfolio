@@ -1,3 +1,5 @@
+/* ./components/positionsTable/clearAllPositionsAlert.tsx */
+
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
@@ -12,6 +14,7 @@ interface ClearAllPositionsAlertProps {
     onConfirm: () => void;
 }
 
+// Modal to warn user about deleting all positions in portfolio
 const ClearAllPositionsAlert = (props: ClearAllPositionsAlertProps) => {
     return (
         <Dialog

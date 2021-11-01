@@ -1,3 +1,5 @@
+/* ./components/positionsTable/positionsTableToolbar.tsx */
+
 import { IconButton, Tooltip } from '@mui/material';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
@@ -12,6 +14,7 @@ interface PortfolioTableToolbarProps {
     onRemovePositionClick: () => void;
 };
 
+// Enhanced functionality toolbar for positions table with action buttons
 const PortfolioTableToolbar = (props: PortfolioTableToolbarProps) => {
     return (
         <Toolbar>

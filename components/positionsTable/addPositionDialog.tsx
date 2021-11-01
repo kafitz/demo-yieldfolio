@@ -1,3 +1,5 @@
+/* ./components/positionsTable/addPositionDialog.tsx */
+
 import { useEffect, useState } from 'react';
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
@@ -15,7 +17,7 @@ import LocalizationProvider from '@mui/lab/LocalizationProvider';
 import DatePicker from '@mui/lab/DatePicker';
 
 import { useAppDispatch } from '../../lib/hooks';
-import { addPositionAsync } from './portfolioSlice';
+import { addPositionAsync } from './positionsSlice';
 
 
 interface AddPositionDialogProps {
@@ -29,6 +31,7 @@ const networks = [
     { key: 'arbitrum', label: 'Arbitrum' },
 ];
 
+// Modal with form to add new a position to the portfolio
 const AddPositionDialog = (props: AddPositionDialogProps) => {
     const [network, setNetwork] = useState<string>(networks[0].key);
     const [protocol, setProtocol] = useState<string>();

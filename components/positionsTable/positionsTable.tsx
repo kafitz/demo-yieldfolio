@@ -1,3 +1,5 @@
+/* ./components/positionsTable/positionsTable.tsx */
+
 import { useState } from 'react';
 import { format } from 'date-fns'; 
 import { useSelector } from 'react-redux';
@@ -17,14 +19,15 @@ import {
     selectPortfolioRows,
     selectSelectedRowId,
     setSelectedRowId 
-} from './portfolioSlice';
+} from './positionsSlice';
 import AddPositionModal from './addPositionDialog';
-import PortfolioTableToolbar from './portfolioTableToolbar';
+import PositionsTableToolbar from './positionsTableToolbar';
 import RemovePositionAlert from './removePositionAlert';
 import ClearAllPositionsAlert from './clearAllPositionsAlert';
 
 
-const PortfolioTable = () => {
+// Table for showing all positions and current yields in a portfolio
+const PositionsTable = () => {
     const rows = useSelector(selectPortfolioRows);
     const isLoading = useSelector(selectIsLoading);
     const [isAddPositionOpen, setAddPositionModalOpen] = useState(false);
@@ -73,7 +76,7 @@ const PortfolioTable = () => {
 
     return (
         <>
-        <PortfolioTableToolbar
+        <PositionsTableToolbar
             onAddPositionClick={handleShowAddPosition}
             onClearPositionsClick={handleShowClearPositionsAlert}
             onRemovePositionClick={handleShowRemovePositionAlert}
@@ -155,4 +158,4 @@ const PortfolioTable = () => {
 }
 
 
-export default PortfolioTable;
+export default PositionsTable;

@@ -1,4 +1,6 @@
-export type PortfolioRow = {
+/* ./components/positionsTable/positionsTableTypes.ts */
+
+export type PositionsRow = {
     id: string,
     network: string,
     protocol: string,

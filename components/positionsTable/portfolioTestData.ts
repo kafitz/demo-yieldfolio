@@ -1,7 +1,9 @@
-import { PortfolioRow } from './portfolioTypes';
+/* ./components/positionsTable/portfolioTestData.ts */
+
+import { PositionsRow } from './positionsTableTypes';
 
 
-export const portfolioTestData: PortfolioRow[] = [
+export const portfolioTestData: PositionsRow[] = [
     {
         id: 'ethereum-aave-yfi-1',
         network: 'Ethereum (L1)',

@@ -3,11 +3,11 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import { Box } from '@mui/system';
 
-import DownloadDataControl from './downloadDataControl';
-import PortfolioTable from './portfolioTable';
+import DownloadDataControl from '../../components/downloadDataControl';
+import PositionsTable from '../../components/positionsTable/positionsTable';
 
 
-
+// Provide an overall layout for the portfolio page components
 const PortfolioLayout = () => {
     return (
         <Grid container spacing={0} sx={{ paddingTop: 12 }}>
@@ -18,7 +18,7 @@ const PortfolioLayout = () => {
                     }}>
                         <Typography variant='h3'>Yieldfolio</Typography>
                     </Box>
-                    <PortfolioTable />
+                    <PositionsTable />
                 </Container>
             </Grid>
             <Grid item xs={12}>

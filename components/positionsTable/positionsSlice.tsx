@@ -1,13 +1,15 @@
+/* ./components/positionsTable/positionsSlice.tsx */
+
 import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { RootState } from '../../lib/store';
 
 import { addPosition, AddPositionParams, clearPositions, deletePosition, DeletePositionParams, fetchContract } from '../../api/portfolio';
-import { PortfolioRow } from './portfolioTypes';
+import { PositionsRow } from './positionsTableTypes';
 import { portfolioTestData } from './portfolioTestData';
 
 
 export interface PortfolioState {
-    rows: PortfolioRow[],
+    rows: PositionsRow[],
     selectedRowId?: string,
     status: 'idle' | 'loading' | 'failed';
 }
@@ -70,7 +72,7 @@ export const portfolioSlice = createSlice({
         .addCase(addPositionAsync.fulfilled, (state) => {
             state.status = 'idle';
 
-            const newData: PortfolioRow[] = [
+            const newData: PositionsRow[] = [
                 ...state.rows,
                 {
                     id: 'ethereum-xbefinance-xbe-1',

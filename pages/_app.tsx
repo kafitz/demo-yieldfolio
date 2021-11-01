@@ -5,6 +5,8 @@ import { Provider } from 'react-redux';
 import { store } from '../lib/store';
 import '../styles/globals.css'
 
+
+// Intialized NextJS React app with Redux-Toolkit (TODO: remove?)
 function App({ Component, pageProps }: AppProps) {
     return (
 		<React.StrictMode>

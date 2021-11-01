@@ -1,14 +1,17 @@
+/* ./components/downloadDataControl.tsx */
+
 import { useSelector } from 'react-redux';
 import Box from '@mui/system/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import UploadFileIcon from '@mui/icons-material/UploadFile';
 
-import { globalTheme } from '../../lib/theme';
-import { exportToJson } from '../../lib/utils';
-import { selectPortfolioRows } from './portfolioSlice';
+import { globalTheme } from '../lib/theme';
+import { exportToJson } from '../lib/utils';
+import { selectPortfolioRows } from './positionsTable/positionsSlice';
 
 
+// Button control for downloading/uploading portfolio JSON save file
 const DownloadDataControl = () => {
     const rows = useSelector(selectPortfolioRows);
 

@@ -1,6 +1,4 @@
 import type { NextPage } from 'next'
-// import Head from 'next/head'
-// import Image from 'next/image'
 
 import { ThemeProvider } from '@mui/material/styles';
 import Box from '@mui/system/Box';
@@ -10,6 +8,7 @@ import GlobalAppBar from '../components/globalAppBar';
 import PortfolioLayout from '../views/portfolio/portfolioLayout';
 
 
+// Initialize MaterialUI layout for app
 const Home: NextPage = () => {
     return (
 		<ThemeProvider theme={defaultTheme}>

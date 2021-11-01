@@ -4,6 +4,7 @@ import Typography from '@mui/material/Typography';
 import { defaultTheme } from '../lib/theme';
 
 
+// General purpose app bar to add logo and sidebar/hamburger menu
 const GlobalAppBar = () => {
     return (
         <AppBar
