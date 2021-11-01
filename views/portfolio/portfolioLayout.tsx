@@ -24,7 +24,9 @@ const PortfolioLayout = () => {
                 </Container>
             </Grid>
             <Grid item xs={12}>
-                <Container>
+                <Container sx={{
+                    marginTop: 3,
+                }}>
                     <DownloadDataControl />
                 </Container>
             </Grid>
