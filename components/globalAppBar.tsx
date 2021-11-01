@@ -1,3 +1,5 @@
+/* ./components/globalAppBar.tsx */
+
 import AppBar from '@mui/material/AppBar';
 import Typography from '@mui/material/Typography';
 

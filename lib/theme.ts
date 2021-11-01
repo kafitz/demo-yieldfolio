@@ -1,3 +1,5 @@
+/* ./lib/theme.ts */
+
 import { alpha } from '@mui/material';
 import { createTheme } from '@mui/material/styles';
 

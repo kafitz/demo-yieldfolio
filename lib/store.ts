@@ -1,3 +1,5 @@
+/* ./lib/store.ts */
+
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
 import portfolioReducer from '../components/positionsTable/positionsSlice';
 

@@ -20,6 +20,9 @@ const initialState: PortfolioState = {
 };
 
 
+/*
+ * API Async Actions
+ */
 export const fetchContractAsync = createAsyncThunk(
     'portfolio/fetchContract',
     async (contractAddress: string) => {
@@ -45,6 +48,9 @@ export const removePositionAsync = createAsyncThunk(
 )
 
 
+/*
+ * Slice state
+ */
 export const portfolioSlice = createSlice({
     name: 'portfolio',
     initialState,
@@ -110,6 +116,10 @@ export const portfolioSlice = createSlice({
         })        
 });
 
+
+/*
+ * Slice exported properties and methods
+ */
 export const { clearAllPositions, setSelectedRowId } = portfolioSlice.actions;
 
 export const selectPortfolioRows = (state: RootState) => state.portfolio.rows;

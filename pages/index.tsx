@@ -1,5 +1,4 @@
-import type { NextPage } from 'next'
-
+/* ./pages/index.tsx */
 import { ThemeProvider } from '@mui/material/styles';
 import Box from '@mui/system/Box';
 
@@ -9,7 +8,7 @@ import PortfolioLayout from '../views/portfolio/portfolioLayout';
 
 
 // Initialize MaterialUI layout for app
-const Home: NextPage = () => {
+const Home = () => {
     return (
 		<ThemeProvider theme={defaultTheme}>
 			<Box sx={{
