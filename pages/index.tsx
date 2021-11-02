@@ -1,4 +1,5 @@
 /* ./pages/index.tsx */
+import { NextPage } from 'next';
 import { ThemeProvider } from '@mui/material/styles';
 import Box from '@mui/system/Box';
 
@@ -8,7 +9,7 @@ import PortfolioLayout from '../views/portfolio/portfolioLayout';
 
 
 // Initialize MaterialUI layout for app
-const Home = () => {
+const IndexPage: NextPage = () => {
     return (
 		<ThemeProvider theme={defaultTheme}>
 			<Box sx={{
@@ -24,4 +25,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default IndexPage;
