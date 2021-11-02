@@ -20,3 +20,9 @@ yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+
+## Preview
+![Main screen](https://i.imgur.com/joJ5j1N.png)
+
+![Add a position](https://i.imgur.com/5u0mJTR.png)
