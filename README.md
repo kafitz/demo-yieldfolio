@@ -23,6 +23,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 
 ## Preview
-![Main screen](https://i.imgur.com/joJ5j1N.png)
+![Main screen](https://i.imgur.com/gZwPt8u.png)
 
-![Add a position](https://i.imgur.com/5u0mJTR.png)
+![Add a position](https://i.imgur.com/KQWc6JO.png)

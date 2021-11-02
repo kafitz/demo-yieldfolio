@@ -30,7 +30,7 @@ const GlobalAppBar = () => {
                     fontFamily: 'Plaster',
                 }}
             >
-                DFX DEMO
+                DEMO Inc.
             </Typography>                    
         </AppBar>        
     );
